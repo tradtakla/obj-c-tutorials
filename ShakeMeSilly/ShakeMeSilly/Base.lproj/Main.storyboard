@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="edosz.ttf">
+            <string>EdoSZ</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="NKP-uX-fwz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Me Silly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-4T-FTN">
+                                <rect key="frame" x="10" y="20" width="347" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="fR3-3K-1Sf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="55"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDL-hZ-Xnp">
+                                <rect key="frame" x="16" y="605" width="343" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ubd-Lg-VjJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="28"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OnN-4y-lHz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJa-Wf-4wx">
+                                <rect key="frame" x="18" y="538" width="341" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="J2c-wq-iPw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maracas1" translatesAutoresizingMaskIntoConstraints="NO" id="oy4-Tr-zhN">
+                                <rect key="frame" x="18" y="236" width="343" height="294"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh4-NY-fa3">
+                                <rect key="frame" x="16" y="167" width="341" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="7po-xh-VfK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wh4-NY-fa3" firstAttribute="top" secondItem="Lo9-4T-FTN" secondAttribute="bottom" constant="8" id="2mw-Bk-fWe"/>
+                            <constraint firstItem="oy4-Tr-zhN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="67L-KZ-NlR"/>
+                            <constraint firstItem="lJa-Wf-4wx" firstAttribute="top" secondItem="oy4-Tr-zhN" secondAttribute="bottom" constant="8" id="Dgx-Ug-TPk"/>
+                            <constraint firstItem="NKP-uX-fwz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="F9C-2q-P1E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oy4-Tr-zhN" secondAttribute="trailing" constant="14" id="GfE-g7-hud"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lo9-4T-FTN" secondAttribute="trailing" constant="18" id="JtM-p2-2tv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CDL-hZ-Xnp" secondAttribute="trailing" constant="16" id="KGD-63-Hkb"/>
+                            <constraint firstItem="NKP-uX-fwz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MXz-h7-qTa"/>
+                            <constraint firstItem="CDL-hZ-Xnp" firstAttribute="top" secondItem="lJa-Wf-4wx" secondAttribute="bottom" constant="16" id="MmC-Co-buA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wh4-NY-fa3" secondAttribute="trailing" constant="18" id="MvY-PF-5el"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CDL-hZ-Xnp" secondAttribute="bottom" constant="20" id="Nc6-pL-CPm"/>
+                            <constraint firstItem="oy4-Tr-zhN" firstAttribute="top" secondItem="wh4-NY-fa3" secondAttribute="bottom" constant="18" id="cCg-ru-m7Q"/>
+                            <constraint firstItem="CDL-hZ-Xnp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dkw-AF-aKT"/>
+                            <constraint firstItem="wh4-NY-fa3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ds7-ne-RpK"/>
+                            <constraint firstItem="Lo9-4T-FTN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="fBh-SU-V1F"/>
+                            <constraint firstItem="NKP-uX-fwz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hbw-N6-Qgc"/>
+                            <constraint firstItem="lJa-Wf-4wx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="iUN-uI-F9U"/>
+                            <constraint firstItem="NKP-uX-fwz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kL8-dh-O0I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lJa-Wf-4wx" secondAttribute="trailing" constant="16" id="oNP-xf-PbP"/>
+                            <constraint firstItem="Lo9-4T-FTN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sPZ-b9-duH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oy4-Tr-zhN" id="wEi-CE-V8k"/>
+                        <outlet property="scoreLabel" destination="lJa-Wf-4wx" id="NER-R6-VNm"/>
+                        <outlet property="startGameButton" destination="CDL-hZ-Xnp" id="bN4-eh-J5D"/>
+                        <outlet property="timerLabel" destination="wh4-NY-fa3" id="uFM-de-sOs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Maracas1" width="551" height="743"/>
+        <image name="beach" width="1920" height="1080"/>
+    </resources>
+</document>
