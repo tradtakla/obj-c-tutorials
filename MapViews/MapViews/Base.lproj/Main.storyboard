@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQf-OR-F8r">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="J1a-Sy-Kck">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="EKV-0J-tdv">
+                                            <rect key="frame" x="16" y="7" width="232" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Standard"/>
+                                                <segment title="Satellite"/>
+                                                <segment title="Hybrid"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="maptypes:" destination="BYZ-38-t0r" eventType="valueChanged" id="uJm-pl-uqo"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fqX-5k-VTr"/>
+                                    <barButtonItem title="Locate Me" width="114" id="TeK-Nz-JQZ">
+                                        <connections>
+                                            <action selector="locateMe:" destination="BYZ-38-t0r" id="2BD-su-cak"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GqN-ql-krb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GqN-ql-krb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7nW-2s-nZZ"/>
+                            <constraint firstItem="GqN-ql-krb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ASc-L7-wtf"/>
+                            <constraint firstItem="GqN-ql-krb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CPb-Ls-KkI"/>
+                            <constraint firstItem="CQf-OR-F8r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EU7-ph-CP9"/>
+                            <constraint firstItem="CQf-OR-F8r" firstAttribute="top" secondItem="GqN-ql-krb" secondAttribute="bottom" id="KtB-Eg-PPJ"/>
+                            <constraint firstItem="CQf-OR-F8r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Uy0-io-ecH"/>
+                            <constraint firstItem="CQf-OR-F8r" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VUS-OP-5m7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="GqN-ql-krb" id="g6E-hx-dEx"/>
+                        <outlet property="segmentControl" destination="EKV-0J-tdv" id="1yf-l5-KiG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="129"/>
+        </scene>
+    </scenes>
+</document>

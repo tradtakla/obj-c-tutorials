@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6zN-aq-G9L">
+                                <rect key="frame" x="0.0" y="617" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="qAQ-WJ-omX">
+                                        <connections>
+                                            <action selector="goBack" destination="bcQ-je-LO9" id="BRd-ZK-5mj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="5K3-Fy-3DW">
+                                        <connections>
+                                            <action selector="goForward" destination="bcQ-je-LO9" id="NOb-OM-Dq7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="246" style="plain" systemItem="fixedSpace" id="Th8-ef-TJu"/>
+                                    <barButtonItem systemItem="refresh" id="l9A-SR-UU7">
+                                        <connections>
+                                            <action selector="reload" destination="bcQ-je-LO9" id="e7r-Qd-NOf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="jli-c4-cSG">
+                                        <connections>
+                                            <action selector="stopLoading" destination="bcQ-je-LO9" id="8Vy-Mn-wNV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcQ-je-LO9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yha-pi-Tke">
+                                <rect key="frame" x="177" y="298" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6zN-aq-G9L" secondAttribute="bottom" constant="6" id="3XI-Dc-h5I"/>
+                            <constraint firstItem="bcQ-je-LO9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4vu-ca-gOZ"/>
+                            <constraint firstItem="bcQ-je-LO9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Ux-d0-kqW"/>
+                            <constraint firstItem="6zN-aq-G9L" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FP6-tW-xzN"/>
+                            <constraint firstItem="bcQ-je-LO9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KXj-4q-hKo"/>
+                            <constraint firstItem="6zN-aq-G9L" firstAttribute="top" secondItem="bcQ-je-LO9" secondAttribute="bottom" id="giQ-dv-5mD"/>
+                            <constraint firstItem="6zN-aq-G9L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i5H-Ui-MUF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="actInd" destination="yha-pi-Tke" id="9hm-c3-J25"/>
+                        <outlet property="webView" destination="bcQ-je-LO9" id="0eL-mq-ifc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="170"/>
+        </scene>
+    </scenes>
+</document>
