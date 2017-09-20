@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C3577571F7258B900360471 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3577561F7258B900360471 /* AppDelegate.m */; };
+		8C35775D1F7258B900360471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C35775B1F7258B900360471 /* Main.storyboard */; };
+		8C35775F1F7258B900360471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C35775E1F7258B900360471 /* Assets.xcassets */; };
+		8C3577621F7258B900360471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3577601F7258B900360471 /* LaunchScreen.storyboard */; };
+		8C3577651F7258B900360471 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3577641F7258B900360471 /* main.m */; };
+		8C35776D1F725BA700360471 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C35776C1F725BA700360471 /* TableViewController.m */; };
+		8C3577701F725BB700360471 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C35776F1F725BB700360471 /* TableViewCell.m */; };
+		8C3577731F72655200360471 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3577721F72655200360471 /* DetailViewController.m */; };
+		8C3577761F72660E00360471 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3577751F72660E00360471 /* MapKit.framework */; };
+		8C3577791F72894F00360471 /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3577781F72894F00360471 /* MapPin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C3577521F7258B900360471 /* LondonLandmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonLandmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3577551F7258B900360471 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C3577561F7258B900360471 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C35775C1F7258B900360471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C35775E1F7258B900360471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C3577611F7258B900360471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C3577631F7258B900360471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3577641F7258B900360471 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C35776B1F725BA700360471 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		8C35776C1F725BA700360471 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		8C35776E1F725BB700360471 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		8C35776F1F725BB700360471 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		8C3577711F72655200360471 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8C3577721F72655200360471 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8C3577751F72660E00360471 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8C3577771F72894F00360471 /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		8C3577781F72894F00360471 /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C35774F1F7258B900360471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3577761F72660E00360471 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C3577491F7258B900360471 = {
+			isa = PBXGroup;
+			children = (
+				8C3577541F7258B900360471 /* LondonLandmarks */,
+				8C3577531F7258B900360471 /* Products */,
+				8C3577741F72660E00360471 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C3577531F7258B900360471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C3577521F7258B900360471 /* LondonLandmarks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C3577541F7258B900360471 /* LondonLandmarks */ = {
+			isa = PBXGroup;
+			children = (
+				8C3577551F7258B900360471 /* AppDelegate.h */,
+				8C3577561F7258B900360471 /* AppDelegate.m */,
+				8C3577711F72655200360471 /* DetailViewController.h */,
+				8C3577721F72655200360471 /* DetailViewController.m */,
+				8C35776E1F725BB700360471 /* TableViewCell.h */,
+				8C35776F1F725BB700360471 /* TableViewCell.m */,
+				8C35776B1F725BA700360471 /* TableViewController.h */,
+				8C35776C1F725BA700360471 /* TableViewController.m */,
+				8C3577771F72894F00360471 /* MapPin.h */,
+				8C3577781F72894F00360471 /* MapPin.m */,
+				8C35775B1F7258B900360471 /* Main.storyboard */,
+				8C35775E1F7258B900360471 /* Assets.xcassets */,
+				8C3577601F7258B900360471 /* LaunchScreen.storyboard */,
+				8C3577631F7258B900360471 /* Info.plist */,
+				8C3577641F7258B900360471 /* main.m */,
+			);
+			path = LondonLandmarks;
+			sourceTree = "<group>";
+		};
+		8C3577741F72660E00360471 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C3577751F72660E00360471 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C3577511F7258B900360471 /* LondonLandmarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C3577681F7258B900360471 /* Build configuration list for PBXNativeTarget "LondonLandmarks" */;
+			buildPhases = (
+				8C35774E1F7258B900360471 /* Sources */,
+				8C35774F1F7258B900360471 /* Frameworks */,
+				8C3577501F7258B900360471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LondonLandmarks;
+			productName = LondonLandmarks;
+			productReference = 8C3577521F7258B900360471 /* LondonLandmarks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C35774A1F7258B900360471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = NM;
+				TargetAttributes = {
+					8C3577511F7258B900360471 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8C35774D1F7258B900360471 /* Build configuration list for PBXProject "LondonLandmarks" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C3577491F7258B900360471;
+			productRefGroup = 8C3577531F7258B900360471 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C3577511F7258B900360471 /* LondonLandmarks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C3577501F7258B900360471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3577621F7258B900360471 /* LaunchScreen.storyboard in Resources */,
+				8C35775F1F7258B900360471 /* Assets.xcassets in Resources */,
+				8C35775D1F7258B900360471 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C35774E1F7258B900360471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C3577791F72894F00360471 /* MapPin.m in Sources */,
+				8C3577731F72655200360471 /* DetailViewController.m in Sources */,
+				8C3577651F7258B900360471 /* main.m in Sources */,
+				8C3577701F725BB700360471 /* TableViewCell.m in Sources */,
+				8C35776D1F725BA700360471 /* TableViewController.m in Sources */,
+				8C3577571F7258B900360471 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C35775B1F7258B900360471 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C35775C1F7258B900360471 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C3577601F7258B900360471 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C3577611F7258B900360471 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C3577661F7258B900360471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C3577671F7258B900360471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C3577691F7258B900360471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T24WE95KS9;
+				INFOPLIST_FILE = LondonLandmarks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elie.LondonLandmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C35776A1F7258B900360471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T24WE95KS9;
+				INFOPLIST_FILE = LondonLandmarks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elie.LondonLandmarks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C35774D1F7258B900360471 /* Build configuration list for PBXProject "LondonLandmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3577661F7258B900360471 /* Debug */,
+				8C3577671F7258B900360471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C3577681F7258B900360471 /* Build configuration list for PBXNativeTarget "LondonLandmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C3577691F7258B900360471 /* Debug */,
+				8C35776A1F7258B900360471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C35774A1F7258B900360471 /* Project object */;
+}
