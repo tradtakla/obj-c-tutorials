@@ -26,4 +26,13 @@
 }
 
 
+- (IBAction)pressMe:(id)sender {
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.label.text = @"iPhone";
+    } if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        self.label.text = @"iPad";
+    }
+    
+}
 @end

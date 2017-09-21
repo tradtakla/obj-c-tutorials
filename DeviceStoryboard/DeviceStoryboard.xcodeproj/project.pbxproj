@@ -13,6 +13,7 @@
 		8CCFB6D41F73E8A300A954ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCFB6D31F73E8A300A954ED /* Assets.xcassets */; };
 		8CCFB6D71F73E8A300A954ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCFB6D51F73E8A300A954ED /* LaunchScreen.storyboard */; };
 		8CCFB6DA1F73E8A300A954ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCFB6D91F73E8A300A954ED /* main.m */; };
+		8CCFB6E11F73E92800A954ED /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCFB6E01F73E92800A954ED /* iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8CCFB6D61F73E8A300A954ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CCFB6D81F73E8A300A954ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CCFB6D91F73E8A300A954ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CCFB6E01F73E92800A954ED /* iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8CCFB6CD1F73E8A300A954ED /* ViewController.h */,
 				8CCFB6CE1F73E8A300A954ED /* ViewController.m */,
 				8CCFB6D01F73E8A300A954ED /* Main.storyboard */,
+				8CCFB6E01F73E92800A954ED /* iPad.storyboard */,
 				8CCFB6D31F73E8A300A954ED /* Assets.xcassets */,
 				8CCFB6D51F73E8A300A954ED /* LaunchScreen.storyboard */,
 				8CCFB6D81F73E8A300A954ED /* Info.plist */,
@@ -129,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CCFB6E11F73E92800A954ED /* iPad.storyboard in Resources */,
 				8CCFB6D71F73E8A300A954ED /* LaunchScreen.storyboard in Resources */,
 				8CCFB6D41F73E8A300A954ED /* Assets.xcassets in Resources */,
 				8CCFB6D21F73E8A300A954ED /* Main.storyboard in Resources */,
@@ -284,7 +288,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elie.DeviceStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -298,7 +302,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = elie.DeviceStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

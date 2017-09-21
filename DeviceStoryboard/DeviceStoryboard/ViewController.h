@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)pressME:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *label;
 
 
 @end
