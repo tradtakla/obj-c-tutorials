@@ -19,7 +19,8 @@
     // Do any additional setup after loading the view.
     
     //   _productID = @"";
-    _buyButton.enabled = NO;
+    _buyButton.enabled = YES;
+   
     
 }
 
@@ -39,6 +40,10 @@
 */
 
 - (IBAction)buy:(id)sender {
+    
+    _buyButton.enabled = NO;
+    self.productTitle.text = [NSString stringWithFormat:@"The product has beenn purchased"];
+    
 }
 @end
 

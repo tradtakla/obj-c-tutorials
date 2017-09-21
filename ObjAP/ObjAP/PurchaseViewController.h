@@ -10,14 +10,12 @@
 #import <StoreKit/StoreKit.h>
 
 
-@interface PurchaseViewController : UIViewController <SKPaymentTransactionObserver, SKProductsRequestDelegate> {
+@interface PurchaseViewController : UIViewController {
     
     
     
 }
 
-@property(strong, nonatomic) SKProduct *product;
-@property(strong, nonatomic) NSString *productID;
 
 
 @property (strong, nonatomic) IBOutlet UILabel *productTitle;
